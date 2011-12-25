@@ -1,0 +1,11 @@
+$def with (lists)
+
+<h1>Chaoge lists</h1>
+
+<ul>
+$for alist in lists:
+	<li>
+		<a href="/view/$alist.id">$alist.title</a>
+		form $datestr(alist.listed_on)
+	</li>
+</ul>

@@ -1,0 +1,50 @@
+$def with (page)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Chaoge</title>
+	<style>
+		#broad{
+			background: none repeat scroll 0 0 #EEEEEE;
+    		border-bottom: 2px solid #CCCCCC;
+    		font-family: sans-serif;
+    		margin-bottom: 1em;
+    		padding: 3px;
+		}
+		#rb {
+            width: 70px;
+            float: right;
+        }
+        #footer {
+    		font-size: small;
+    		list-style-type: none;
+    		padding: 0;
+    		text-align: center;
+		}
+		p.content {
+			word-spacing: 5px;
+			letter-spacing: 0.1em;
+			text-indent: 1cm;
+			padding:20px;
+			font-size:1.2em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="broad">
+	<a href="/">Home</a>
+	<span id="rb"><a href="/new">Add new</a></span>
+</div>
+
+$:page
+
+<br/>
+<ul id="footer">
+	<li>Copyright © 2011 Chaoge.</li>
+	<li><a href="http://breakaway.me">Created by Sparkxxf</a></li>
+</ul>
+</body>
+</html>
